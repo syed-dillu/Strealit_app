@@ -1,5 +1,11 @@
 import streamlit as st
+import os
+import sys
+from dotenv import load_dotenv
 
+load_dotenv()
+
+api = os.getenv('API_SAMP')
 st.title("Streamlit App")
 
 user_name = st.text_input("Enter your name:")
